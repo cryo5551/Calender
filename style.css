@@ -1,0 +1,27 @@
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.calendar table {
+  border-collapse: collapse;
+  width: 90%;
+}
+.calendar th,
+.calendar td {
+  width: 14.28%;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.selected {
+  background-color: green;
+}
+
+@media (max-width: 600px) {
+  .calendar th,
+  .calendar td {
+    width: 50%;
+  }
+}
